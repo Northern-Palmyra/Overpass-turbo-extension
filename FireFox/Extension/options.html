@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Extension options</title>
+	<script type="text/javascript" src="options.js" charset="UTF-8"></script>
+	<style>
+		body {
+			padding: 2em;
+			font-size: 16px;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		button {
+			border: none;
+			border-top: 1px solid rgb(42, 219, 131);
+			border-left: 1px solid rgb(42, 219, 131);
+			border-bottom: 2px solid rgb(28, 139, 83);
+			border-right: 2px solid rgb(28, 139, 83);
+			padding: 1em;
+			border-radius: 8px;
+			font-weight: 900;
+			color: white;
+			background-color: rgb(34, 175, 104);
+			box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.2);
+			margin-bottom: 1em;
+			transition: all 100ms;
+		}
+        
+		button:active {
+            border: none;
+            border-top: 0px solid rgb(42, 219, 131);
+            border-left: 0px solid rgb(42, 219, 131);
+            border-bottom: 1px solid rgb(28, 139, 83);
+            border-right: 1px solid rgb(28, 139, 83);
+            background-color: rgb(14, 165, 94);
+            box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.2);
+			margin-bottom: calc(1em + 1px);
+			margin-left: calc(0em + 2px);
+			transition: all 100ms;
+        }
+
+		#res {
+			margin-top: 1em;
+			margin-bottom: 1em;
+		}
+
+		span {
+			margin-top: 4em;
+			color: gray;
+			font-size: 14px;
+		}
+
+		img {
+			max-width: 90vw;
+			min-width: 400px;
+			width: 60%;
+			padding: 0.1em;
+			border: 1px solid gray;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+	<h1></h1>
+	
+	<div class="firefox_block">
+		<p>
+			We glad you're interested in our expansion. We hope you find it useful.<br>
+			In the version for Firefox, you need to give permission to the extension to interact with the site https://overpass-turbo.eu/.<br>
+			To do this, click on the “Give permission” button and in the window that appears, click the “Allow” button.
+		</p>
+		<button id="btnPerms">Give permission</button>
+		
+		<div id="res"></div>
+	</div>
+
+	<div class="chrome_block">
+		<p>We glad you're interested in our expansion. We hope you find it useful.</p>
+	</div>
+
+	<div class="help">
+		<strong>Here's some help on how to use the extension.</strong>
+
+		<p>At first, you need to write a request and execute it.</p>
+		<p>When working without an extension, you get the name of the place, probably its address and, in some cases, coordinates.</p>
+		<img src="./images/img1.jpg">
+
+		<p>When you install our extension, you receive active links to popular mapping services leading to the coordinates of the selected object. It is important to note that the links open in a new window.</p>
+		<img src="./images/img2.jpg">
+
+		<p>Good luck with GEOINT.</p>
+	</div>
+
+
+	<span>If you want to ask a question about the extension, use our <a href="https://t.me/osint_junior_bot" target="_blank">bot in the Telegram messenger</a> or <a href="mailto:deleted32337@gmail.com">email</a> us or leave a review on the extension page.</span>
+
+	
+	
+	
+</body>
+</html>

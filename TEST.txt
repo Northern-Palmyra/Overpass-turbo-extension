@@ -1,0 +1,37 @@
+[out:json];
+nwr({{bbox}})["addr:housenumber"="33"];
+out geom;
+----------------------------------------------------
+[out:json];
+nwr({{bbox}})["natural"="water"];
+out body;
+>;
+out skel qt;
+----------------------------------------------------
+[out:json];
+node({{bbox}})["building"="yes"];
+out body;
+>;
+out skel qt;
+----------------------------------------------------
+[out:json];
+way({{bbox}})["building"="yes"];
+out body;
+>;
+out skel qt;
+----------------------------------------------------
+[out:json];
+relation({{bbox}})["building"="yes"];
+out body;
+>;
+out skel qt;
+----------------------------------------------------
+[out:json];
+(
+	way({{bbox}})["landuse"="military"]->.bases;
+	way(around.bases:90)["natural"="water"];
+);
+out body;
+>;
+out skel qt;
+----------------------------------------------------

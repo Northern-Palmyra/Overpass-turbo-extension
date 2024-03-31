@@ -1,0 +1,58 @@
+{
+	"manifest_version": 3,
+	"name": "{{name}}",
+	"short_name": "{{short_name}}",
+	"author": {
+        "email": "{{author}}"
+    },
+	"version": "{{version}}",
+	"version_name": "{{version}} {{version_name}}",
+	"description": "{{description}}",
+	"homepage_url": "{{homepage_url}}",
+	"host_permissions": [
+		"*://*.overpass-turbo.eu/*",
+		"*://maps.mail.ru/osm/tools/overpass/*"
+	],
+	"icons": {
+		"16": "icons/icon16.png",
+		"32": "icons/icon32.png",
+		"48": "icons/icon48.png",
+		"128": "icons/icon128.png"
+	},
+	"options_ui": {
+		"page": "options.html",
+		"open_in_tab": true
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"*://*.overpass-turbo.eu/*",
+				"*://maps.mail.ru/*"
+			],
+			"js": [
+				"./content.js"
+			],
+			"css": [
+				"./content.css"
+			],
+			"run_at": "document_start",
+			"all_frames": true
+		}
+	],
+	"web_accessible_resources": [
+		{
+			"resources": [
+				"injected.js",
+				"images/telegram.svg",
+				"images/clipboard.svg"
+			],
+			"extension_ids": [
+				"*"
+			],
+			"matches": [
+				"*://*.overpass-turbo.eu/*",
+				"*://maps.mail.ru/*"
+			]
+		}
+	]
+}

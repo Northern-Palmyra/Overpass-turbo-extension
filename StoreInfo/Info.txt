@@ -1,0 +1,36 @@
+Name
+------------------------
+Overpass-Turbo StreetView
+
+
+Summary
+------------------------
+Once the request is complete, click the pin on map and you'll see links to map services at the bottom of the pop-up.
+
+This extension provided by North Palmyra (https://t.me/northern_palmyra)
+
+
+
+Categories
+------------------------
+Search tools / Tools
+
+
+Email
+------------------------
+deleted31337@gmail.com
+
+
+Web Site
+------------------------
+https://t.me/northern_palmyra
+
+
+host_permission
+------------------------
+Need to interact with overpass-turbo site to show Google StreetView links.
+
+
+Scripting permission
+------------------------
+It is necessary to call the extension options page when installing the extension; After installing the extension, the user sees a help page for using the extension.
